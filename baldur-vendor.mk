@@ -436,12 +436,15 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libminkdescriptor \
     libminksocket_vendor \
+    libmobilenet_dsp_frc \
+    libmobilenet_dsp_frc_networks \
     libnicm_internal \
     libnicm_modemproxy \
     libnicm_netlink \
     libnicm_utils \
     libnsp_ipc_cdsp_skel \
     libnspextensioncopyprovider \
+    libnspextensionfrcprovider \
     libnspextensionsuperresolutionprovider \
     liboemcrypto \
     libpowercore \
@@ -492,6 +495,8 @@ PRODUCT_PACKAGES += \
     libswdapaidl \
     libthermalclient \
     libvideooptfeature \
+    libvpp_frc \
+    libvpp_gfrc_networks \
     libvpp_svc_skel \
     libvpplibrary \
     oemowninfo \
