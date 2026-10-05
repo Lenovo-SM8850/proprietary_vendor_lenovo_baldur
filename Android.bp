@@ -52,11 +52,189 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "c2.dolby.client",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/c2.dolby.client.so",
+            ],
+            shared_libs: [
+                "android.hardware.media.c2-V1-ndk",
+                "libbinder_ndk",
+                "libcodec2_aidl",
+                "libstagefright_aidl_bufferpool2",
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_hal_common",
+                "libcodec2_vndk",
+                "libutils",
+                "android.hardware.media.c2@1.0",
+                "libcodec2_hidl@1.0",
+                "libhidlbase",
+                "libcutils",
+                "libstagefright_bufferpool@2.0.1",
+                "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
 
+cc_prebuilt_library_shared {
+    name: "c2.dolby.hevc.dec",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/c2.dolby.hevc.dec.so",
+            ],
+            shared_libs: [
+                "libcodec2_shim",
+                "android.hardware.media.c2-V1-ndk",
+                "libbinder_ndk",
+                "libcodec2_aidl",
+                "libstagefright_aidl_bufferpool2",
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libcodec2_hal_common",
+                "android.hardware.media.c2@1.0",
+                "libcodec2_hidl@1.0",
+                "libcodec2_soft_common",
+                "libcutils",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libEGL",
+                "libGLESv3",
+                "c2.dolby.store",
+                "c2.dolby.client",
+                "libstagefright_bufferpool@2.0.1",
+                "libdolbydecoderprocessor",
+                "libui",
+                "libhidlbase",
+                "libdolbyproxyandroid",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
 
+cc_prebuilt_library_shared {
+    name: "c2.dolby.hevc.sec.dec",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/c2.dolby.hevc.sec.dec.so",
+            ],
+            shared_libs: [
+                "libcodec2_shim",
+                "android.hardware.media.c2-V1-ndk",
+                "libbinder_ndk",
+                "libcodec2_aidl",
+                "libstagefright_aidl_bufferpool2",
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libcodec2_hal_common",
+                "android.hardware.media.c2@1.0",
+                "libcodec2_hidl@1.0",
+                "libcodec2_soft_common",
+                "libcutils",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libEGL",
+                "libGLESv3",
+                "c2.dolby.store",
+                "c2.dolby.client",
+                "libstagefright_bufferpool@2.0.1",
+                "libdolbydecoderprocessor",
+                "libui",
+                "libhidlbase",
+                "libdolbyproxyandroid",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
 
-
-
+cc_prebuilt_library_shared {
+    name: "c2.dolby.store",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/c2.dolby.store.so",
+            ],
+            shared_libs: [
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hal_common",
+                "libcodec2_vndk",
+                "libutils",
+                "android.hardware.media.c2@1.0",
+                "libcodec2_hidl@1.0",
+                "liblog",
+                "libcutils",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
 
 cc_prebuilt_library_shared {
     name: "com.qti.sensor.gc08a8_sunwin_front",
@@ -97,20 +275,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 cc_prebuilt_library_shared {
     name: "com.qti.sensor.imx858",
     owner: "lenovo",
@@ -149,27 +313,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 cc_prebuilt_library_shared {
     name: "com.qti.eisv2",
@@ -2495,7 +2638,6 @@ cc_prebuilt_library_shared {
 }
 
 
-
 cc_prebuilt_library_shared {
     name: "com.qti.camx.chiiqutils",
     owner: "lenovo",
@@ -3970,7 +4112,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "com.qualcomm.mcx.linearmapper",
     owner: "lenovo",
@@ -4280,7 +4421,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "libq3dtools_esx",
     owner: "lenovo",
@@ -4342,11 +4482,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
-
 
 cc_prebuilt_library_shared {
     name: "camera.qcom.core",
@@ -4648,12 +4783,6 @@ cc_prebuilt_library_shared {
 
 
 
-
-
-
-
-
-
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.qteeconnector@1.0-impl",
     owner: "lenovo",
@@ -4688,7 +4817,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "lib-imscommon",
@@ -4767,7 +4895,6 @@ cc_prebuilt_library_shared {
 
 
 
-
 cc_prebuilt_library_shared {
     name: "lib-imsvtcore",
     owner: "lenovo",
@@ -4802,8 +4929,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
-
 cc_prebuilt_library_shared {
     name: "lib-rtpcore",
     owner: "lenovo",
@@ -4834,7 +4959,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libCB",
@@ -4877,8 +5001,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
 
 cc_prebuilt_library_shared {
     name: "libGPMTEEC_vendor",
@@ -4933,7 +5055,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libGPreqcancel_svc",
@@ -4990,7 +5111,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libQshQmiIDL",
@@ -5228,9 +5348,6 @@ cc_prebuilt_library_shared {
 }
 
 
-
-
-
 cc_prebuilt_library_shared {
     name: "libar-pal",
     owner: "lenovo",
@@ -5270,8 +5387,6 @@ cc_prebuilt_library_shared {
 
 
 
-
-
 cc_prebuilt_library_shared {
     name: "libarcsoft_video_superportrait",
     owner: "lenovo",
@@ -5303,7 +5418,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "libaudioplatformconverter.qti",
     owner: "lenovo",
@@ -5322,8 +5436,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
 
 cc_prebuilt_library_shared {
     name: "libbitmlenginev2",
@@ -5740,7 +5852,6 @@ cc_prebuilt_library_shared {
 
 
 
-
 cc_prebuilt_library_shared {
     name: "libcamximageformatutils",
     owner: "lenovo",
@@ -5787,7 +5898,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libcamxmetadata",
@@ -6340,7 +6450,6 @@ cc_prebuilt_library_shared {
 }
 
 
-
 cc_prebuilt_library_shared {
     name: "libclstc_tm",
     owner: "lenovo",
@@ -6405,7 +6514,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 
 
@@ -6503,7 +6611,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "libdisp-aba",
     owner: "lenovo",
@@ -6585,6 +6692,130 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libdolbydecoderprocessor",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbydecoderprocessor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libEGL",
+                "libGLESv2",
+                "libui",
+                "libutils",
+                "libstagefright_foundation",
+                "libcutils",
+                "libdolbyottcameracontrol",
+                "libhidlbase",
+                "libnativewindow",
+                "libdolbyeglcore",
+                "libcodec2_vndk",
+                "libcodec2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyeglcore",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbyeglcore.so",
+            ],
+            shared_libs: [
+                "libEGL",
+                "libGLESv3",
+                "libnativewindow",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyottcameracontrol",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbyottcameracontrol.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyproxyandroid",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbyproxyandroid.so",
+            ],
+            shared_libs: [
+                "libdolbyottcameracontrol",
+                "libsensorndkbridge",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
 
 
 cc_prebuilt_library_shared {
@@ -6648,8 +6879,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
 
 
 cc_prebuilt_library_shared {
@@ -6731,8 +6960,6 @@ cc_prebuilt_library_shared {
 
 
 
-
-
 cc_prebuilt_library_shared {
     name: "libfastcvopt",
     owner: "lenovo",
@@ -6760,10 +6987,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
 
 
 cc_prebuilt_library_shared {
@@ -6798,10 +7021,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
-
-
-
 cc_prebuilt_library_shared {
     name: "libhdr_als_adapter",
     owner: "lenovo",
@@ -6834,7 +7053,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "libhdr_tm",
     owner: "lenovo",
@@ -6864,9 +7082,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
 
 cc_prebuilt_library_shared {
     name: "libhwliqinterface2",
@@ -6907,11 +7122,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
-
 
 
 
@@ -6964,9 +7174,6 @@ cc_prebuilt_library_shared {
 }
 
 
-
-
-
 cc_prebuilt_library_shared {
     name: "liblistensoundmodel2vendor",
     owner: "lenovo",
@@ -6992,7 +7199,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libllvm-glnext",
@@ -7049,10 +7255,6 @@ cc_prebuilt_library_shared {
 
 
 
-
-
-
-
 cc_prebuilt_library_shared {
     name: "libmcs",
     owner: "lenovo",
@@ -7085,7 +7287,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libmdsprpc",
@@ -7121,11 +7322,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
-
-
-
-
 cc_prebuilt_library_shared {
     name: "libminkdescriptor",
     owner: "lenovo",
@@ -7152,7 +7348,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libminksocket_vendor",
@@ -7182,16 +7377,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7292,7 +7477,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "libnicm_utils",
     owner: "lenovo",
@@ -7322,7 +7506,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 
 cc_prebuilt_library_shared {
@@ -7360,13 +7543,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
-
-
-
-
-
-
 cc_prebuilt_library_shared {
     name: "libpowercore",
     owner: "lenovo",
@@ -7398,12 +7574,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
-
-
-
-
-
 cc_prebuilt_library_shared {
     name: "libqape_oem_ext",
     owner: "lenovo",
@@ -7432,7 +7602,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "libqc2audio_base",
     owner: "lenovo",
@@ -7460,12 +7629,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
-
-
 
 
 cc_prebuilt_library_shared {
@@ -7536,8 +7699,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
 
 
 cc_prebuilt_library_shared {
@@ -7686,7 +7847,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libqcodec2_imgtxrfilter",
@@ -7865,12 +8025,6 @@ cc_prebuilt_library_shared {
 
 
 
-
-
-
-
-
-
 cc_prebuilt_library_shared {
     name: "libqfdservice",
     owner: "lenovo",
@@ -7899,20 +8053,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7947,9 +8087,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
-
-
 cc_prebuilt_library_shared {
     name: "libqti-qesdk-secure",
     owner: "lenovo",
@@ -7975,22 +8112,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -8396,7 +8517,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "libshsc",
     owner: "lenovo",
@@ -8421,7 +8541,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libsiminputgenutil",
@@ -8462,12 +8581,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
-
-
 
 
 cc_prebuilt_library_shared {
@@ -8559,7 +8672,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "libspukeymint",
     owner: "lenovo",
@@ -8628,8 +8740,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
-
 cc_prebuilt_library_shared {
     name: "libssd",
     owner: "lenovo",
@@ -8658,8 +8768,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
 
 cc_prebuilt_library_shared {
     name: "libstream_compress",
@@ -8754,9 +8862,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
-
-
 cc_prebuilt_library_shared {
     name: "libthermalclient",
     owner: "lenovo",
@@ -8782,12 +8887,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
-
-
-
 
 
 
@@ -8826,7 +8925,6 @@ cc_prebuilt_library_shared {
 }
 
 
-
 cc_prebuilt_library_shared {
     name: "libvpplibrary",
     owner: "lenovo",
@@ -8857,7 +8955,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
     name: "libnsp_ipc_cdsp_skel",
@@ -9040,6 +9137,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libswdapaidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libswdapaidl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.ImsRtpService-aidl-Impl",
     owner: "lenovo",
     strip: {
@@ -9215,8 +9332,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-
-
 cc_prebuilt_binary {
     name: "adsprpcd",
     owner: "lenovo",
@@ -9241,7 +9356,6 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
-
 
 cc_prebuilt_binary {
     name: "aw882xx_cali",
@@ -9304,15 +9418,6 @@ cc_prebuilt_binary {
 }
 
 
-
-
-
-
-
-
-
-
-
 cc_prebuilt_binary {
     name: "android.hardware.gatekeeper-rust-service-qti",
     owner: "lenovo",
@@ -9338,9 +9443,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-
-
-
 cc_prebuilt_binary {
     name: "android.hardware.weaver-service-spu-qti",
     owner: "lenovo",
@@ -9360,6 +9462,80 @@ cc_prebuilt_binary {
                 "libspukeymintdeviceutils",
                 "libbase",
                 "libspcom",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "dvs-aidl-service",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/dvs-aidl-service",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libdolbyottcameracontrol",
+                "libsensorndkbridge",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.dolby.media.c2-service-vision",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.dolby.media.c2-service-vision",
+            ],
+            shared_libs: [
+                "android.hardware.media.c2-V1-ndk",
+                "libbinder_ndk",
+                "libcodec2_aidl",
+                "libstagefright_aidl_bufferpool2",
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_hal_common",
+                "libcodec2_vndk",
+                "libutils",
+                "android.hardware.media.c2@1.0",
+                "libcodec2_hidl@1.0",
+                "libbinder",
+                "libhidlbase",
+                "c2.dolby.store",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -9407,10 +9583,6 @@ cc_prebuilt_binary {
     relative_install_path: "hw",
     soc_specific: true,
 }
-
-
-
-
 
 
 cc_prebuilt_binary {
@@ -9481,7 +9653,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-
 sh_binary {
     name: "init.qcom.cabl",
     owner: "lenovo",
@@ -9531,12 +9702,6 @@ sh_binary {
 }
 
 
-
-
-
-
-
-
 cc_prebuilt_binary {
     name: "oemowninfo",
     owner: "lenovo",
@@ -9562,8 +9727,6 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
-
-
 
 sh_binary {
     name: "profile_config_service",
@@ -9616,18 +9779,6 @@ cc_prebuilt_binary {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 sh_binary {
     name: "setwlansardsi0",
     owner: "lenovo",
@@ -9668,10 +9819,6 @@ sh_binary {
     soc_specific: true,
 }
 
-
-
-
-
 cc_prebuilt_binary {
     name: "thermal-engine-v2",
     owner: "lenovo",
@@ -9701,7 +9848,6 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
-
 
 
 cc_prebuilt_binary {
@@ -9735,9 +9881,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-
-
-
 install_symlink {
     name: "vendor_lib64_libEGL_adreno_so",
     soc_specific: true,
@@ -9750,13 +9893,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libGLESv2_adreno.so",
     symlink_target: "/vendor/lib64/egl/libGLESv2_adreno.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libq3dtools_adreno_so",
-    soc_specific: true,
-    installed_location: "lib64/libq3dtools_adreno.so",
-    symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 
 cc_prebuilt_library_shared {
