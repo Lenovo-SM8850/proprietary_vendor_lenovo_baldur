@@ -568,10 +568,15 @@ PRODUCT_PACKAGES += \
     libvideooptfeature \
     libvpphvx \
     libvpplibrary \
+    libmobilenet_dsp_frc \
+    libmobilenet_dsp_frc_networks \
     libnsp_ipc_cdsp_skel \
     libnspextensioncopyprovider \
+    libnspextensionfrcprovider \
     libnspextensionsuperresolutionprovider \
     libsvdsp \
+    libvpp_frc \
+    libvpp_gfrc_networks \
     libvpp_svc_skel \
     sensors.qsh \
     libquasar \
