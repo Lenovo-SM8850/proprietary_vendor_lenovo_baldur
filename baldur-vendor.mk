@@ -78,11 +78,14 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
+    vendor/lenovo/baldur/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/lenovo/baldur/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-spu-qti.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.weaver-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service-spu-qti.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/init.vendor.qti.hardware.spu.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.qti.hardware.spu.service.rc \
+    vendor/lenovo/baldur/proprietary/vendor/etc/init/vendor.dolby.media.c2-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-service-vision.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_sku1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku1/video_system_specs.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_sku2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku2/video_system_specs.json \
@@ -221,6 +224,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
+    c2.dolby.client \
+    c2.dolby.hevc.dec \
+    c2.dolby.hevc.sec.dec \
+    c2.dolby.store \
     com.qti.sensor.gc08a8_sunwin_front \
     com.qti.sensor.imx858 \
     com.qti.eisv2 \
@@ -453,6 +460,10 @@ PRODUCT_PACKAGES += \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
+    libdolbydecoderprocessor \
+    libdolbyeglcore \
+    libdolbyottcameracontrol \
+    libdolbyproxyandroid \
     libdpps \
     libdrmMinimalfsHelper \
     libdrmfs \
@@ -564,6 +575,7 @@ PRODUCT_PACKAGES += \
     libvpp_svc_skel \
     sensors.qsh \
     libquasar \
+    libswdapaidl \
     vendor.qti.ImsRtpService-aidl-Impl \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
@@ -580,6 +592,8 @@ PRODUCT_PACKAGES += \
     cdsprpcd \
     android.hardware.gatekeeper-rust-service-qti \
     android.hardware.weaver-service-spu-qti \
+    dvs-aidl-service \
+    vendor.dolby.media.c2-service-vision \
     vendor.lenovo.hardware.touchscreen-service \
     vendor.qti.hardware.secureprocessor \
     vendor.qti.hardware.sensorscalibrate-service \
