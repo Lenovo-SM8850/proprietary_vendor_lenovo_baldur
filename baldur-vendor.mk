@@ -38,6 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
+    vendor/lenovo/baldur/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/hexlp/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp/hexlpservice_boot_config.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/hexlp_unsigned/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp_unsigned/hexlpservice_boot_config.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
@@ -463,6 +464,8 @@ PRODUCT_PACKAGES += \
     libvpp_svc_skel \
     sensors.qsh \
     libquasar \
+    libswdapaidl \
+    libswgamedapaidl \
     vendor.qti.gnss-service \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor_lib_rfsa_adsp_capi_dofg_nn_so_1 \
