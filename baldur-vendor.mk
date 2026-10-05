@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/baldur
 
 PRODUCT_COPY_FILES += \
+    vendor/lenovo/baldur/proprietary/system/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/dolby_vision.cfg \
     vendor/lenovo/baldur/proprietary/vendor/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb \
     vendor/lenovo/baldur/proprietary/vendor/etc/acdbdata/canoe_atp/ATP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_atp/ATP_workspaceFileXml.qwsp \
     vendor/lenovo/baldur/proprietary/vendor/etc/acdbdata/canoe_cdp/CDP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_cdp/CDP_acdb_cal.acdb \
@@ -39,6 +40,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/lenovo/baldur/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/lenovo/baldur/proprietary/vendor/etc/hexlp/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp/hexlpservice_boot_config.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/hexlp_unsigned/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp_unsigned/hexlpservice_boot_config.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
@@ -183,9 +185,11 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_qtech_imx858.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_qtech_imx858.bin \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_imx766.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_imx766.canoe.bin \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_imx858.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_imx858.canoe.bin \
-    vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin
+    vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin \
+    vendor/lenovo/baldur/proprietary/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/persist/display/dolby_vision.cfg
 
 PRODUCT_PACKAGES += \
+    libdolbyproxyandroid-system \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128c2csli_imx766 \
     com.qti.eeprom.irs2381c_polar \
