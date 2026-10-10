@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/cablconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cablconfig.xml \
+    vendor/lenovo/baldur/proprietary/vendor/etc/dcp_symbols/dcp.elf:$(TARGET_COPY_OUT_VENDOR)/etc/dcp_symbols/dcp.elf \
     vendor/lenovo/baldur/proprietary/vendor/etc/display/SVIConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/SVIConfig.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_p3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_p3.txt \
@@ -113,20 +114,38 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_100_green.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_100_green.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_30_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_30_red.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_60_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_60_blue.bin \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/CAMERA_ICP_1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/aw22xxx_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/dcp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dcp.bin \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b08 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b09 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/lenovo/baldur/proprietary/vendor/firmware/gen80000_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_sqe.fw \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/gen80000_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_zap.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/gen80200_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_gmu.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/gen80200_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_sqe.fw \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/gen80200_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_zap.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/gen80900_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80900_zap.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_mp.bin \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu35_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu35_4v.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu35_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu35_4v_unsigned.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v_unsigned.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_unsigned.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_2v_v1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1.mbn \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_2v_v1_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1_unsigned.mbn \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/bitmlconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/bitmlconfig.bin \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/camxfl115indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl115indices.bin \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/camxfl300v1indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl300v1indices.bin \
@@ -297,7 +316,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.sfl \
     com.qualcomm.qti.mcx.usecase.extension \
-    dcp.elf \
     dvs-aidl-service \
     eglSubDriverAndroid \
     init.qcom.cabl \
