@@ -450,7 +450,6 @@ PRODUCT_PACKAGES += \
     libchifeature2 \
     libchinodeevautils \
     libchinodehmeutils \
-    libclstc_tm \
     libcneapiclient \
     libcom.qti.chinodeutils \
     libconfigdb \
@@ -464,7 +463,6 @@ PRODUCT_PACKAGES += \
     libdolbyeglcore \
     libdolbyottcameracontrol \
     libdolbyproxyandroid \
-    libdpps \
     libdrmMinimalfsHelper \
     libdrmfs \
     libdsi_netctrl \
@@ -475,8 +473,6 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libfeutils \
     libgsl \
-    libhdr_als_adapter \
-    libhdr_tm \
     libhwliqinterface2 \
     libhwlispcffdump \
     libisphwsetting \
@@ -533,9 +529,6 @@ PRODUCT_PACKAGES += \
     libqti-qesdk-secure \
     libqtigefar \
     librpmb \
-    libsdm-color \
-    libsdm-colormgr-algo \
-    libsdmextension \
     libsdsprpc \
     libsensinghubapi-prop \
     libsensorcal \
@@ -548,7 +541,6 @@ PRODUCT_PACKAGES += \
     libsession_voice_config \
     libshsc \
     libsiminputgenutil \
-    libsnapdragoncolor-manager \
     libsnsapi \
     libsnsdiaglog \
     libsnsutils \
