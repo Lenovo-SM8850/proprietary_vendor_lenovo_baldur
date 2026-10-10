@@ -405,6 +405,7 @@ PRODUCT_PACKAGES += \
     libchicore \
     libchifeature2 \
     libchinodeevautils \
+    libclstc_tm \
     libcneapiclient \
     libdev_bt \
     libdev_speaker \
@@ -423,6 +424,8 @@ PRODUCT_PACKAGES += \
     libeai_float \
     libfastcvopt \
     libgsl \
+    libhdr_als_adapter \
+    libhdr_tm \
     libhwliqinterface2 \
     libkcl \
     libkernelmanager \
@@ -464,6 +467,9 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client \
     libqti-qesdk-secure \
     libquasar \
+    libsdm-color \
+    libsdm-colormgr-algo \
+    libsdmextension \
     libsdsprpc \
     libsensinghubapi-prop \
     libsession_ar \
