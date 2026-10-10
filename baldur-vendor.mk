@@ -5,44 +5,6 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/baldur
 
-PRODUCT_PACKAGES += lenovo_baldur_vendor_etc_dcp_symbols_dcp_elf
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_CAMERA_ICP_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_CAMERA_ICP_1_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_evass_b00
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_evass_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_evass_mdt
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_gen80000_zap_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_gen80200_zap_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_gen80900_zap_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu33_4v_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu33_4v_unsigned_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu35_4v_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu35_4v_unsigned_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu40_1v_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu40_1v_unsigned_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu40_2v_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu40_2v_unsigned_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu40_2v_v1_mbn
-
-PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_vpu40_2v_v1_unsigned_mbn
-
 PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
     vendor/lenovo/baldur/proprietary/vendor/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb \
@@ -87,11 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/init.vendor.qti.hardware.spu.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.qti.hardware.spu.service.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/vendor.dolby.media.c2-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-service-vision.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_sku1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku1/video_system_specs.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_sku2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku2/video_system_specs.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_sku3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku3/video_system_specs.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v1/video_system_specs.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v2/video_system_specs.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/media_codecs_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/media_codecs_canoe_sku1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1_vendor.xml \
@@ -340,6 +297,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.sfl \
     com.qualcomm.qti.mcx.usecase.extension \
+    dcp.elf \
     dvs-aidl-service \
     eglSubDriverAndroid \
     init.qcom.cabl \
