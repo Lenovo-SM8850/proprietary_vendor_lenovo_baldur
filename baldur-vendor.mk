@@ -11,6 +11,10 @@ PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_CAMERA_ICP_mbn
 
 PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_CAMERA_ICP_1_mbn
 
+PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_arcface_ta_b00
+
+PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_arcface_ta_mdt
+
 PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_evass_b00
 
 PRODUCT_PACKAGES += lenovo_baldur_vendor_firmware_evass_mbn
@@ -153,6 +157,13 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_100_green.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_100_green.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_30_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_30_red.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_60_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_60_blue.bin \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b01 \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b03 \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b04 \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b05 \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b06 \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b07 \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b08 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/aw22xxx_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/dcp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dcp.bin \
@@ -402,6 +413,8 @@ PRODUCT_PACKAGES += \
     libadsprpc \
     libagmmixer \
     libar-pal \
+    libarcsoft_face_biometric \
+    libarcsoft_faceid \
     libarcsoft_video_superportrait \
     libaudioplatformconverter.qti \
     libbitmlenginev2 \
@@ -443,7 +456,6 @@ PRODUCT_PACKAGES += \
     libchifeature2 \
     libchinodeevautils \
     libchinodehmeutils \
-    libclstc_tm \
     libcneapiclient \
     libcom.qti.chinodeutils \
     libconfigdb \
@@ -453,19 +465,17 @@ PRODUCT_PACKAGES += \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
-    libdpps \
     libdrmMinimalfsHelper \
     libdrmfs \
     libdsi_netctrl \
     libdsutils \
     libeai_fixed \
     libeai_float \
+    libfaceid_ca_proxy.arcsoft \
     libfastcvdsp_stub \
     libfastcvopt \
     libfeutils \
     libgsl \
-    libhdr_als_adapter \
-    libhdr_tm \
     libhwliqinterface2 \
     libhwlispcffdump \
     libisphwsetting \
@@ -522,9 +532,6 @@ PRODUCT_PACKAGES += \
     libqti-qesdk-secure \
     libqtigefar \
     librpmb \
-    libsdm-color \
-    libsdm-colormgr-algo \
-    libsdmextension \
     libsdsprpc \
     libsensinghubapi-prop \
     libsensorcal \
@@ -537,7 +544,6 @@ PRODUCT_PACKAGES += \
     libsession_voice_config \
     libshsc \
     libsiminputgenutil \
-    libsnapdragoncolor-manager \
     libsnsapi \
     libsnsdiaglog \
     libsnsutils \
@@ -578,6 +584,7 @@ PRODUCT_PACKAGES += \
     aw882xx_cali \
     camera-preamble.json \
     cdsprpcd \
+    android.hardware.biometrics.face@4.0-service.face \
     android.hardware.gatekeeper-rust-service-qti \
     android.hardware.weaver-service-spu-qti \
     vendor.lenovo.hardware.touchscreen-service \
