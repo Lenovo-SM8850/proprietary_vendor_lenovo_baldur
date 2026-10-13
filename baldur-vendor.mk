@@ -41,16 +41,14 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
+    vendor/lenovo/baldur/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/lenovo/baldur/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-spu-qti.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.weaver-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service-spu-qti.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/init.vendor.qti.hardware.spu.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.qti.hardware.spu.service.rc \
+    vendor/lenovo/baldur/proprietary/vendor/etc/init/vendor.dolby.media.c2-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-service-vision.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_sku1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku1/video_system_specs.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_sku2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku2/video_system_specs.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_sku3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku3/video_system_specs.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v1/video_system_specs.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/media_canoe_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v2/video_system_specs.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/media_codecs_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/media_codecs_canoe_sku1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1_vendor.xml \
@@ -117,15 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_60_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_60_blue.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/CAMERA_ICP_1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mbn \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b00 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b01 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b03 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b04 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b05 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b06 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b07 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b08 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.mdt \
     vendor/lenovo/baldur/proprietary/vendor/firmware/aw22xxx_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/dcp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dcp.bin \
@@ -210,6 +199,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
+    c2.dolby.client \
+    c2.dolby.hevc.dec \
+    c2.dolby.hevc.sec.dec \
+    c2.dolby.store \
     com.qti.eeprom.gt24p128c2csli_imx766 \
     com.qti.eeprom.irs2381c_polar \
     com.qti.eeprom.p24c256c_imx766 \
@@ -412,14 +405,10 @@ PRODUCT_PACKAGES += \
     libaidenoiserv2 \
     libaodoptfeature \
     libar-pal \
-    libarcsoft_face_biometric \
-    libarcsoft_face_mink \
-    libarcsoft_faceid \
     libarcsoft_qnnhtp \
     libarcsoft_video_superportrait \
     libaudiofeaturestats \
     libaudioplatformconverter.qti \
-    libbiometricsface_ca.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session_aidl_qti \
@@ -463,6 +452,10 @@ PRODUCT_PACKAGES += \
     libdisplayqos \
     libdisplayskuutils \
     libdmap_consent_sdk \
+    libdolbydecoderprocessor \
+    libdolbyeglcore \
+    libdolbyottcameracontrol \
+    libdolbyproxyandroid \
     libdrmMinimalfsHelper \
     libdrmfs \
     libdrmtime \
@@ -472,7 +465,6 @@ PRODUCT_PACKAGES += \
     libeai_float \
     libembmsservice \
     libengineplugin \
-    libfaceid_ca_proxy.arcsoft \
     libfastcvopt \
     libgame_enhance \
     libgamepoweroptfeature \
@@ -667,13 +659,19 @@ PRODUCT_PACKAGES += \
     libvppclient \
     libvpplibrary \
     libxml \
+    libmobilenet_dsp_frc \
+    libmobilenet_dsp_frc_networks \
     libnsp_ipc_cdsp_skel \
     libnspextensioncopyprovider \
+    libnspextensionfrcprovider \
     libnspextensionsuperresolutionprovider \
     libsvdsp \
+    libvpp_frc \
+    libvpp_gfrc_networks \
     libvpp_svc_skel \
     sensors.qsh \
     libquasar \
+    libswdapaidl \
     vendor.qti.ImsRtpService-aidl-Impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.qti.hardware.qteeconnector-V1-ndk \
@@ -698,13 +696,14 @@ PRODUCT_PACKAGES += \
     hdcp2p2prov \
     hexlpservice \
     hlosminkdaemon \
-    android.hardware.biometrics.face@4.0-service.face \
     android.hardware.bluetooth@aidl-service-qti \
     android.hardware.gatekeeper-rust-service-qti \
     android.hardware.gatekeeper-service-spu-qti \
     android.hardware.security.onekeymint-service-qti \
     android.hardware.security.secretkeeper-service-qti \
     android.hardware.weaver-service-spu-qti \
+    dvs-aidl-service \
+    vendor.dolby.media.c2-service-vision \
     vendor.lenovo.hardware.touchscreen-service \
     vendor.qti.MemHal-service \
     vendor.qti.hardware.c2pa-aidl-service-qti \
