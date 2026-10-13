@@ -315,6 +315,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.sfl \
     com.qualcomm.qti.mcx.usecase.extension \
+    dvs-aidl-service \
     eglSubDriverAndroid \
     init.qcom.cabl \
     init.qcom.cabl.off \
@@ -390,6 +391,7 @@ PRODUCT_PACKAGES += \
     libdolbydecoderprocessor \
     libdolbyeglcore \
     libdolbyottcameracontrol \
+    libdolbyproxyandroid \
     libdrmMinimalfsHelper \
     libdrmfs \
     libdsutils \
