@@ -147,15 +147,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/firmware/CAMERA_ICP_1.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.elf \
     vendor/lenovo/baldur/proprietary/vendor/firmware/CAMERA_ICP_1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/CAMERA_ICP_1.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mdt \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b00 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b01 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b03 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b04 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b05 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b06 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b07 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b08 \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.mdt \
     vendor/lenovo/baldur/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
@@ -461,10 +452,12 @@ PRODUCT_PACKAGES += \
     libpseudocryptoplugin \
     libnsp_ipc_cdsp_skel \
     libnspextensioncopyprovider \
+    libnspextensionfrcprovider \
     libnspextensiongenericqnnprovider \
     libnspextensionsuperresolutionprovider \
     libqsegnetengine_dsp_skel \
     libsvdsp \
+    libvpp_gfrc_networks \
     libvpp_svc_skel \
     sensors.qsh \
     libquasar \
@@ -485,7 +478,6 @@ PRODUCT_PACKAGES += \
     diag-router \
     hexlpservice \
     hlosminkdaemon \
-    android.hardware.biometrics.face@4.0-service.face \
     android.hardware.bluetooth@aidl-service-qti \
     android.hardware.gatekeeper-rust-service-qti \
     android.hardware.powerstats-service.qti \
