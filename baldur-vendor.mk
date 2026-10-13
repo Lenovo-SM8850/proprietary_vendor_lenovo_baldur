@@ -457,6 +457,7 @@ PRODUCT_PACKAGES += \
     libnspextensionsuperresolutionprovider \
     libqsegnetengine_dsp_skel \
     libsvdsp \
+    libvpp_frc \
     libvpp_gfrc_networks \
     libvpp_svc_skel \
     sensors.qsh \
