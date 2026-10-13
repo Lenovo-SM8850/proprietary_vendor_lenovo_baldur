@@ -7181,6 +7181,43 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdolbydecoderprocessor",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbydecoderprocessor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libEGL",
+                "libGLESv2",
+                "libui",
+                "libutils",
+                "libstagefright_foundation",
+                "libcutils",
+                "libdolbyottcameracontrol",
+                "libhidlbase",
+                "libnativewindow",
+                "libdolbyeglcore",
+                "libcodec2_vndk",
+                "libcodec2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdrmMinimalfsHelper",
     owner: "lenovo",
     strip: {
@@ -8423,6 +8460,26 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswdapaidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libswdapaidl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
