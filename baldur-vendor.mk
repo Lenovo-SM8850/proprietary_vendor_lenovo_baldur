@@ -713,6 +713,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.hardware.spu-service \
     vendor.qti.hardware.trustedui-aidl-service-qti \
+    init.qcom.cabl.off \
+    init.qcom.cabl \
+    init.qcom.svi.off \
+    init.qcom.svi \
     init.qti.keymaster \
     init.qti.media \
     ipacm-diag \

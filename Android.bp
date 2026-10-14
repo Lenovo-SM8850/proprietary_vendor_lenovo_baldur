@@ -16963,6 +16963,38 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
+    name: "init.qcom.cabl.off",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qcom.cabl.off.sh",
+    filename: "init.qcom.cabl.off.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.cabl",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qcom.cabl.sh",
+    filename: "init.qcom.cabl.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.svi.off",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qcom.svi.off.sh",
+    filename: "init.qcom.svi.off.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.svi",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qcom.svi.sh",
+    filename: "init.qcom.svi.sh",
+    soc_specific: true,
+}
+
+sh_binary {
     name: "init.qti.keymaster",
     owner: "lenovo",
     src: "proprietary/vendor/bin/init.qti.keymaster.sh",
