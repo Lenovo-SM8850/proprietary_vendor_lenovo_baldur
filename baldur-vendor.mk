@@ -109,7 +109,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/thermal-engine_cpu_4.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_4.conf \
     vendor/lenovo/baldur/proprietary/vendor/etc/thermal_user_case.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_user_case.conf \
     vendor/lenovo/baldur/proprietary/vendor/etc/wifi/sar-vendor-cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/sar-vendor-cmd.xml \
-    vendor/lenovo/baldur/proprietary/vendor/etc/yellochick_v1.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/yellochick_v1.pmd \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_100_green.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_100_green.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_30_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_30_red.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_60_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_60_blue.bin \
