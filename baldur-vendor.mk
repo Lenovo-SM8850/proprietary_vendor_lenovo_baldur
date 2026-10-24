@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/display/qdcm_calib_data_nt36523_3k_fhd_plus_165Hz_DPHY_video_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36523_3k_fhd_plus_165Hz_DPHY_video_panel.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630946261688083603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946261688083603.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630946850534658451.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946850534658451.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
