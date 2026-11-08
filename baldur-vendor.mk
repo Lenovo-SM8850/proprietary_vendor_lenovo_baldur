@@ -447,7 +447,6 @@ PRODUCT_PACKAGES += \
     libsession_voice_config \
     libsiminputgenutil \
     libsn100u_fw \
-    libsn300u_fw \
     libspuprovisionids \
     libstream_compress \
     libstream_pcm \
