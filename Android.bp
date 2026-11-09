@@ -2955,6 +2955,7 @@ cc_prebuilt_library_shared {
                 "libchilog",
                 "libcom.qti.chinodeutils",
                 "libcamxjumbfcomposer",
+                "libjsoncpp",
                 "libc",
                 "libm",
                 "libdl",
@@ -6553,10 +6554,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/qc_bcs_lib.so",
             ],
             shared_libs: [
-                "libcutils",
-                "liblog",
                 "libqcbor",
                 "libminksocket_vendor",
+                "libcutils",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -6624,41 +6625,6 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.qseecom-V1-ndk",
                 "libbinder_ndk",
                 "libQSEEComAPI",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qteeconnector@1.0-impl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libQSEEComAPI",
-                "libxml2",
-                "vendor.qti.hardware.qteeconnector-V1-ndk",
-                "libbinder_ndk",
-                "libion",
-                "libGPreqcancel_svc",
-                "libdmabufheap",
                 "libc++",
                 "libc",
                 "libm",
@@ -7395,6 +7361,7 @@ cc_prebuilt_library_shared {
                 "libcdsprpc",
                 "libcutils",
                 "liblog",
+                "libtflite_fd",
                 "libsync",
                 "libz",
                 "libc++",
@@ -8500,10 +8467,13 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libcdsprpc",
+                "libdmabufheap",
+                "libion",
+                "libOpenCL",
                 "libz",
+                "libdl",
                 "libc",
                 "libm",
-                "libdl",
             ],
         },
     },
@@ -9405,7 +9375,6 @@ cc_prebuilt_library_shared {
                 "libQSEEComAPI",
                 "libminksocket_vendor",
                 "libqcbor",
-                "libdsi_netctrl",
                 "libc++",
                 "libc",
                 "libm",
@@ -9634,64 +9603,6 @@ cc_prebuilt_library_shared {
                 "libminkdescriptor",
                 "libminksocket_vendor",
                 "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libssd",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libssd.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libdiag",
-                "liblog",
-                "libQSEEComAPI",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libssdStaticHelper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libssdStaticHelper.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libdiag",
-                "liblog",
-                "libQSEEComAPI",
                 "libc++",
                 "libc",
                 "libm",
@@ -10180,59 +10091,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qteeconnector-V1-ndk",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.qccvndhal_aidl-V1-ndk",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 prebuilt_rfsa {
     name: "vendor_lib_rfsa_adsp_capi_dofg_nn_so_1",
     filename: "capi_dofg_nn.so.1",
@@ -10569,8 +10427,8 @@ cc_prebuilt_binary {
                 "android.hardware.bluetooth@aidl-impl-qti",
                 "vendor.qti.hardware.bttpi-V3-ndk",
                 "libqmi_cci",
-                "libqmi",
                 "libqmiservices",
+                "libqmi",
                 "libqcbor",
                 "libminksocket_vendor",
                 "libsoc_helper",
@@ -11085,7 +10943,7 @@ cc_prebuilt_binary {
                 "libbinder",
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "vendor.qti.qccvndhal_aidl-V1-ndk",
+                "vendor.qti.qccvndhal_aidl-V2-ndk",
                 "vendor.qti.qccvndhal_aidl-halimpl",
                 "vendor.qti.qccsyshal_aidl-V1-ndk",
                 "libc++",
@@ -11119,6 +10977,7 @@ cc_prebuilt_binary {
                 "libdrmfs",
                 "libminkdescriptor",
                 "libdmabufheap",
+                "libion",
                 "libc++",
                 "libc",
                 "libm",
@@ -11152,7 +11011,6 @@ cc_prebuilt_binary {
                 "libQSEEComAPI",
                 "libqcbor",
                 "libminksocket_vendor",
-                "libdsi_netctrl",
                 "libc++",
                 "libc",
                 "libm",
@@ -11187,7 +11045,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libavservices_minijail",
-                "libdsi_netctrl",
                 "libc++",
                 "libc",
                 "libm",
@@ -11366,6 +11223,14 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "start_subsys",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/start_subsys.sh",
+    filename: "start_subsys.sh",
     soc_specific: true,
 }
 

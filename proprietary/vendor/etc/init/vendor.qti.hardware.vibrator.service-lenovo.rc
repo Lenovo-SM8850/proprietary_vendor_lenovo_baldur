@@ -24,7 +24,8 @@ on boot
 service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service-lenovo
     class hal
     user system
-    group system input
+    group system input wakelock
+    capabilities BLOCK_SUSPEND
 
     setenv RICHTAP_DEVICE_PATH  /dev/aw8697_haptic_r;/dev/aw8697_haptic_l
     setenv ENV_RICHTAP_CONFIG_PATH /odm/etc/aac_richtap_r.config;/odm/etc/aac_richtap_l.config

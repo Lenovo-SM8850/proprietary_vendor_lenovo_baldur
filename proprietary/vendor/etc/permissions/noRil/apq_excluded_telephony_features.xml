@@ -18,4 +18,5 @@
     <unavailable-feature name="android.hardware.telephony.radio.access" />
     <unavailable-feature name="android.hardware.telephony.euicc" />
     <unavailable-feature name="android.hardware.telephony.euicc.mep" />
+    <unavailable-feature name="android.hardware.telephony.satellite" />
 </permissions>

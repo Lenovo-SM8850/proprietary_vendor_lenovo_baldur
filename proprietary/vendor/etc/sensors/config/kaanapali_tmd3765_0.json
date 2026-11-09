@@ -1,7 +1,8 @@
 {
   "config":{
-    "hw_platform": ["MTP", "Surf", "RCM", "HDK"],
-    "platform_family": ["160"]
+    "hw_platform": ["MTP", "Surf", "RCM"],
+    "platform_family": ["160"],
+    "soc_id": ["660", "661"]
   },
   "tmd3765_0":{
     "owner": "sns_tmd3765",

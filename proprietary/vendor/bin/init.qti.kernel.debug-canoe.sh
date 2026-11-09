@@ -192,10 +192,14 @@ init_dynamic_mem_dump()
 create_stp_policy()
 {
     create_instance /config/stp-policy/stm0:p_ost.policy
-    chmod 660 /config/stp-policy/stm0:p_ost.policy
+    chmod 661 /config/stp-policy/stm0:p_ost.policy
     create_instance /config/stp-policy/stm0:p_ost.policy/default
     chmod 660 /config/stp-policy/stm0:p_ost.policy/default
     echo ftrace > /config/stp-policy/stm0:p_ost.policy/default/entity
+
+    create_instance /config/stp-policy/stm0:p_ost.policy/diag/
+    echo diag >/config/stp-policy/stm0:p_ost.policy/diag/entity
+    chmod 661 /config/stp-policy/stm0:p_ost.policy/diag/
 }
 
 adjust_permission()
@@ -217,6 +221,9 @@ adjust_permission()
     chmod 660 /sys/bus/coresight/devices/*/enable_source
     chgrp shell /sys/bus/coresight/devices/*/enable_sink
     chmod 660 /sys/bus/coresight/devices/*/enable_sink
+
+    chmod 660 /dev/stm0
+    chgrp system /dev/stm0
 }
 
 enable_cti_flush_for_etf()

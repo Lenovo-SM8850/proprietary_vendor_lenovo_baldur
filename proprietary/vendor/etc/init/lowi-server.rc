@@ -6,3 +6,4 @@ service lowi-server /vendor/bin/lowi-server
     class late_start
     user gps
     group gps wifi inet oem_2901 logd
+    capabilities NET_ADMIN

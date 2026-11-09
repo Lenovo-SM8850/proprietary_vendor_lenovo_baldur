@@ -38,7 +38,7 @@ case "$platformid" in
     "660"|"661"|"704"|"722"|"723"|"743")
 	/vendor/bin/sh /vendor/bin/init.qti.kernel.debug-canoe.sh
 	;;
-    "685"|"727")
+    "685"|"727"|"764")
 	/vendor/bin/sh /vendor/bin/init.qti.kernel.debug-alor.sh
 	;;
      *)

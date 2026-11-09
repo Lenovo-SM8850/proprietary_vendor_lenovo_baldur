@@ -21,7 +21,7 @@ service vendor.hexlpservice /vendor/bin/hexlpservice -domain signed
     oneshot
 
     # start only when requested (uncomment below to disable service at boot)
-    # disabled
+    disabled
 
 service vendor.unsignedhexlpservice /vendor/bin/hexlpservice -domain unsigned
     class hal
